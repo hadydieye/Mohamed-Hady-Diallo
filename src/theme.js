@@ -155,15 +155,15 @@ export const yellowTheme = {
 
 export const materialDarkTheme = {
   body: "#263238",
-  text: "#aeaeae",
+  text: "#ECEFF1",
   expTxtColor: "#000a12",
-  highlight: "#4f5b62",
+  highlight: "#37474F",
   dark: "#000a12",
-  secondaryText: "#aeaeae",
+  secondaryText: "#90A4AE",
   imageHighlight: "#607d8b",
   compImgHighlight: "#E6E6E6",
   jacketColor: "#8eacbb",
-  headerColor: "#34515e",
+  headerColor: "#455A64",
   splashBg: "#4f5b62",
 };
 

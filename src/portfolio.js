@@ -236,7 +236,7 @@ const degrees = {
       subtitle: "BT en Génie Informatique",
       logo_path: "",
       alt_name: "Université Nongo Conakry",
-      duration: "Oct 2025",
+      duration: "2024 - En cours",
       descriptions: [
         "⚡ Formation en Génie Informatique couvrant les fondamentaux du développement logiciel, des bases de données et des réseaux.",
         "⚡ Projets pratiques en développement web et mobile.",
@@ -477,7 +477,7 @@ const experience = {
           company: "Université Nongo Conakry",
           company_url: "",
           logo_path: "",
-          duration: "Oct 2025",
+          duration: "2024 - En cours",
           location: "Conakry, Guinée",
           description:
             "Formation en Génie Informatique couvrant les fondamentaux du développement logiciel, bases de données et réseaux.",
