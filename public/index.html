@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon1.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Mohamed Hady Diallo - Portfolio"
+      content="Contenu du portfolio"
+    />
+    <meta property="og:title" content="Mohamed Hady Diallo Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/hadydieye" />
+    <meta name="description" content="Développeur Fullstack & Apprenant en Cybersécurité | Je construis des solutions numériques pour l'Afrique." property="og:description">
+    <meta name="keywords" content="Hady Diallo, Portfolio, Développeur Fullstack, Cybersécurité, Guinée" />
+    <meta name="author" content="Mohamed Hady Diallo" />
+    <meta name="application-name" content="Hady Diallo Portfolio" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000000">
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    
+    <!--
+      Notez l'utilisation de %PUBLIC_URL% dans les balises ci-dessus.
+      Il sera remplacé par l'URL du dossier `public` lors de la construction.
+      Seuls les fichiers du dossier `public` peuvent être référencés depuis le HTML.
+
+      Contrairement à "/favicon.ico" ou "favicon.ico", "%PUBLIC_URL%/favicon.ico"
+      fonctionnera correctement avec le routage côté client et une URL publique non racine.
+      Apprenez à configurer une URL publique non racine en exécutant `npm run build`.
+    -->
+    <title>Mohamed Hady Diallo - Portfolio</title>
+    <script type="text/javascript">
+      // Application mono-page pour GitHub Pages
+      // Licence MIT
+      // https://github.com/rafgraph/spa-github-pages
+      // Ce script vérifie si une redirection est présente dans la chaîne de requête,
+      // la convertit en URL correcte et l'ajoute à l'historique du navigateur
+      // via window.history.replaceState(...),
+      // ce qui empêche le navigateur de tenter de charger la nouvelle URL.
+      // Lorsque l'application mono-page est chargée plus bas dans ce fichier,
+      // l'URL correcte sera dans l'historique du navigateur pour
+      // que l'application puisse router correctement.
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+  </head>
+  <body>
+    <noscript>Vous devez activer JavaScript pour exécuter cette application.</noscript>
+    <div id="root"></div>
+    <!--
+      Ce fichier HTML est un modèle.
+      Si vous l'ouvrez directement dans le navigateur, vous verrez une page vide.
+
+      Vous pouvez ajouter des polices web, des balises meta ou des analyses à ce fichier.
+      L'étape de construction placera les scripts groupés dans la balise <body>.
+
+      Pour commencer le développement, exécutez `npm start` ou `yarn start`.
+      Pour créer un bundle de production, utilisez `npm run build` ou `yarn build`.
+    -->
+  </body>
+</html>

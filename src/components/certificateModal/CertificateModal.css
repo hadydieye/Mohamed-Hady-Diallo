@@ -1,0 +1,153 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 60px 20px;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 680px;
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.2s;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  background: rgba(128, 128, 128, 0.15);
+}
+
+.modal-header {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+
+.modal-header-text {
+  flex: 1;
+}
+
+.modal-title {
+  font-family: "Google Sans Medium";
+  font-size: 22px;
+  margin: 0 0 6px;
+  line-height: 1.3;
+}
+
+.modal-subtitle {
+  font-family: "Google Sans Regular";
+  font-size: 15px;
+  margin: 0;
+}
+
+.modal-image-wrapper {
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(128, 128, 128, 0.2);
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+
+.meta-label {
+  font-family: "Google Sans Regular";
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.7;
+}
+
+.meta-value {
+  font-family: "Google Sans Medium";
+  font-size: 14px;
+}
+
+.modal-topics {
+  margin-top: 4px;
+}
+
+.topics-title {
+  font-family: "Google Sans Medium";
+  font-size: 16px;
+  margin: 0 0 12px;
+}
+
+.topics-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.topic-item {
+  font-family: "Google Sans Regular";
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(128, 128, 128, 0.06);
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 24px 16px;
+  }
+  .modal-header {
+    flex-direction: column-reverse;
+  }
+  .modal-image-wrapper {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+  }
+  .modal-title {
+    font-size: 18px;
+  }
+  .modal-meta {
+    grid-template-columns: 1fr;
+  }
+}
