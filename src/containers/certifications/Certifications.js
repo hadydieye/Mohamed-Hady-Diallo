@@ -19,13 +19,14 @@ export default function Certifications(props) {
         </Fade>
       </div>
       <div className="certs-grid">
-        {certifications.certifications.map((cert) => (
-          <CertificationCard
-            key={cert.id}
-            certificate={cert}
-            theme={theme}
-            onClick={setSelectedCert}
-          />
+        {certifications.certifications.map((cert, i) => (
+          <div key={cert.id} style={{ animationDelay: `${i * 0.1}s` }}>
+            <CertificationCard
+              certificate={cert}
+              theme={theme}
+              onClick={setSelectedCert}
+            />
+          </div>
         ))}
       </div>
       {selectedCert && (

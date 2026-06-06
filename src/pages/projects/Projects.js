@@ -16,7 +16,7 @@ class Projects extends Component {
     const theme = this.props.theme;
     return (
       <div className="projects-main">
-        <Header theme={theme} />
+        <Header theme={theme} onToggle={this.props.onToggle} />
         <div className="projects-container">
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-header">
@@ -34,8 +34,10 @@ class Projects extends Component {
             </div>
           </Fade>
           <div className="projects-grid">
-            {projects.data.map((project) => (
-              <ProjectCard key={project.id} project={project} theme={theme} />
+            {projects.data.map((project, i) => (
+              <div key={project.id} style={{ animationDelay: `${i * 0.1}s` }}>
+                <ProjectCard project={project} theme={theme} />
+              </div>
             ))}
           </div>
         </div>

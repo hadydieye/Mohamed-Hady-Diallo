@@ -4,6 +4,7 @@ import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
+import ToggleSwitch from "../footer/ToggleSwitch";
 
 const onMouseEnter = (event, color) => {
   const el = event.target;
@@ -95,6 +96,9 @@ class Header extends Component {
                 >
                   Contact
                 </NavLink>
+              </li>
+              <li className="toggle-switch-li">
+                <ToggleSwitch theme={theme} onToggle={this.props.onToggle} />
               </li>
             </ul>
           </header>

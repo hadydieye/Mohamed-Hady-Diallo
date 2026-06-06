@@ -4,11 +4,9 @@ import { lightTheme } from "../../theme";
 import styled from "styled-components";
 
 export const ToggleDiv = styled.div`
-  margin-top: 40px;
-  margin-right: 5px;
-  float: right;
   display: flex;
   flex-direction: row;
+  align-items: center;
 `;
 
 export const SunSvg = styled.svg`
