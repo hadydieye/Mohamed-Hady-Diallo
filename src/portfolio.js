@@ -20,7 +20,7 @@ const greeting = {
   subTitle:
     "Développeur Fullstack · Je construis des solutions numériques pour l'Afrique.",
   resumeLink:
-    "",
+    "/CV_Mohamed_Hady_Diallo.pdf",
   portfolio_repository: "https://github.com/hadydieye/masterPortfolio",
   githubProfile: "https://github.com/hadydieye",
 };
