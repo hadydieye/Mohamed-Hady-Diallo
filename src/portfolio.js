@@ -289,7 +289,7 @@ const certifications = {
     {
       id: "react-expert",
       title: "React JS : Du Débutant à l'Expert",
-      subtitle: "- Développement Full Stack",
+      subtitle: "- Développement Full-Stack",
       logo_path: "Hands_on_reactjs.jpg",
       certificate_link: "",
       alt_name: "Udemy",
